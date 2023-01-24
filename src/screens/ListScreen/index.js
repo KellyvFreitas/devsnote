@@ -36,7 +36,7 @@ export default () => {
   };
   return (
     <Container>
-      {list.lenght > 0 && (
+      {list.length > 0 && (
         <NotesList
           data={list}
           renderItem={({item, index}) => (
@@ -46,10 +46,9 @@ export default () => {
         />
       )}
 
-      {list.lenght == 0 && (
+      {list.lenght === 0 && (
         <NoNotes>
-          <NoNotesImage source={require('../../assets/img/note.png')} />
-          <NoNotesText>Nenhuma nota cadastrada!</NoNotesText>
+          <NoNotesText>Nenhuma anotação</NoNotesText>
         </NoNotes>
       )}
     </Container>
